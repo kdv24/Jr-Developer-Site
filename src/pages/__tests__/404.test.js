@@ -1,37 +1,16 @@
 import React from 'react';
 import { render } from 'react-testing-library';
-import { StaticQuery, useStaticQuery } from 'gatsby';
+import mockPageQueries from '../__mocks__/query-mocks';
 
 import NotFoundPage from '../404';
 
-const mockSiteData = {
-  site: {
-    siteMetadata: {
-      title: 'Sample page',
-    },
-  },
-};
-
-const mockSeo = {
-  site: {
-    siteMetadata: {
-      title: 'Sample page',
-      description: `Oh the Places You'll Go`,
-      author: 'Dr Seuess',
-    },
-  },
-};
-
-beforeEach(() => {
-  StaticQuery.mockImplementationOnce(({ render: renderData }) =>
-    renderData(mockSiteData),
-  );
-  useStaticQuery.mockImplementation(() => mockSeo);
-});
+beforeEach(mockPageQueries);
 
 describe('<NotFoundPage />', () => {
-  it('renders', () => {
-    const { debug } = render(<NotFoundPage />);
-    debug();
+  it('renders correctly', () => {
+    const { getByText } = render(<NotFoundPage />);
+
+    const header = getByText(/not found/i);
+    expect(header.tagName).toBe('H1');
   });
 });
