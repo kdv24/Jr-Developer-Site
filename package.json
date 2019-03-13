@@ -13,11 +13,16 @@
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
-    "format": "prettier --write src/**/*.{js,jsx}",
-    "lint": "eslint --fix src",
+    "format": "prettier src/**/*.{js,jsx,md}",
+    "prettier": "is-ci prettier:check prettier:format",
+    "prettier:check": "prettier --check src/**/*.{js,jsx,md}",
+    "prettier:format": "prettier --write src/**/*.{js,jsx,md}",
+    "lint": "eslint src",
     "start": "npm run develop",
     "serve": "gatsby serve",
-    "test": "jest"
+    "test": "is-ci test:coverage test:watch",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage"
   },
   "repository": {
     "type": "git",
@@ -54,6 +59,7 @@
     "eslint-plugin-react": "^7.12.4",
     "eslint-plugin-react-hooks": "^1.5.0",
     "identity-obj-proxy": "^3.0.0",
+    "is-ci-cli": "^1.1.1",
     "jest": "^24.4.0",
     "jest-dom": "^3.1.2",
     "jest-watch-typeahead": "^0.2.1",
