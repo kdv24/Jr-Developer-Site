@@ -1,7 +1,7 @@
 version: 2
 jobs:
   build:
-    working_directory: ~gatsby-site
+    working_directory: ~/gatsby-site
     docker:
       - image: circleci/node:10
     steps:
