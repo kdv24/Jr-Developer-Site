@@ -29,3 +29,6 @@ jobs:
           command: yarn test
       - store_artifacts:
           path: coverage
+      - run:
+          name: Send coverage reports to Codecov
+          command: npx codecov
