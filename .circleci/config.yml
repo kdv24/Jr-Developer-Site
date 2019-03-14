@@ -1,9 +1,9 @@
-version: 2
+version: 2.1
 jobs:
   build:
     working_directory: ~/gatsby-site
     docker:
-      - image: circleci/node:10
+      - image: cypress/base:10
     steps:
       - checkout
       - restore_cache:
@@ -32,3 +32,9 @@ jobs:
       - run:
           name: Send coverage reports to Codecov
           command: npx codecov
+      - run:
+          name: Run Cypress E2E tests
+          command: yarn test:e2e
+      - run:
+          name: Building Gatsby site
+          command: yarn build

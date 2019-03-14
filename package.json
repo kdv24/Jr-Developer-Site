@@ -17,13 +17,18 @@
     "prettier": "is-ci prettier:check prettier:format",
     "prettier:check": "prettier --check src/**/*.{js,jsx,md}",
     "prettier:format": "prettier --write src/**/*.{js,jsx,md}",
-    "lint": "eslint src",
+    "lint": "eslint src cypress",
     "lint-staged": "lint-staged",
     "start": "npm run develop",
     "serve": "gatsby serve",
     "test": "is-ci test:coverage test:watch",
     "test:watch": "jest --watch",
-    "test:coverage": "jest --coverage"
+    "test:coverage": "jest --coverage",
+    "test:e2e": "is-ci e2e:headless e2e:open",
+    "e2e:open": "start-server-and-test develop http-get://localhost:8000 cy:open",
+    "e2e:headless": "start-server-and-test develop http-get://localhost:8000 cy:run",
+    "cy:open": "cypress open",
+    "cy:run": "cypress run"
   },
   "repository": {
     "type": "git",
@@ -50,9 +55,12 @@
     "babel-eslint": "^10.0.1",
     "babel-jest": "^24.4.0",
     "babel-preset-gatsby": "^0.1.9",
+    "cypress": "^3.1.5",
+    "cypress-testing-library": "^2.3.6",
     "eslint": "^5.15.1",
     "eslint-config-airbnb": "^17.1.0",
     "eslint-config-prettier": "^4.1.0",
+    "eslint-plugin-cypress": "^2.2.1",
     "eslint-plugin-import": "^2.16.0",
     "eslint-plugin-jest": "^22.3.0",
     "eslint-plugin-jsx-a11y": "^6.2.1",
@@ -67,6 +75,7 @@
     "jest-watch-typeahead": "^0.2.1",
     "lint-staged": "^8.1.5",
     "prettier": "^1.16.4",
-    "react-testing-library": "^6.0.0"
+    "react-testing-library": "^6.0.0",
+    "start-server-and-test": "^1.7.11"
   }
 }

@@ -1,6 +1,6 @@
 import React from 'react';
 import { render } from 'react-testing-library';
-import mockPageQueries from '../__mocks__/query-mocks';
+import mockPageQueries from '../../__mocks__/query-mocks';
 
 import NotFoundPage from '../404';
 
