@@ -32,3 +32,9 @@ jobs:
       - run:
           name: Send coverage reports to Codecov
           command: npx codecov
+      - run:
+          name: Run Cypress E2E tests
+          command: yarn test:e2e
+      - run:
+          name: Building Gatsby site
+          command: yarn build
