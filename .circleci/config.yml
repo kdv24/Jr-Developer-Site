@@ -1,4 +1,6 @@
-version: 2
+version: 2.1
+orbs:
+  cypress: cypress-io/cypress@1
 jobs:
   build:
     working_directory: ~/gatsby-site
@@ -32,9 +34,7 @@ jobs:
       - run:
           name: Send coverage reports to Codecov
           command: npx codecov
-      - run:
-          name: Run Cypress E2E tests
-          command: yarn test:e2e
+      - cypress/run
       - run:
           name: Building Gatsby site
           command: yarn build
