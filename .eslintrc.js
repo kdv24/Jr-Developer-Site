@@ -3,6 +3,7 @@ module.exports = {
   env: {
     browser: true,
     es6: true,
+    "cypress/globals": true,
     'jest/globals': true,
   },
   settings: {
@@ -18,7 +19,7 @@ module.exports = {
     },
     sourceType: 'module',
   },
-  plugins: ['react', 'react-hooks', 'jest', 'prettier'],
+  plugins: ['react', 'react-hooks', 'jest', 'cypress', 'prettier'],
   extends: ['airbnb', 'prettier', 'prettier/react'], 
   rules: {
     'react/require-default-props': 'off',
