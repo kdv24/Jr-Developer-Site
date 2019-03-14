@@ -17,7 +17,7 @@
     "prettier": "is-ci prettier:check prettier:format",
     "prettier:check": "prettier --check src/**/*.{js,jsx,md}",
     "prettier:format": "prettier --write src/**/*.{js,jsx,md}",
-    "lint": "eslint src",
+    "lint": "eslint src cypress",
     "lint-staged": "lint-staged",
     "start": "npm run develop",
     "serve": "gatsby serve",
