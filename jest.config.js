@@ -1,5 +1,5 @@
 module.exports = {
-  collectCoverageFrom: ['src/**/*.{js,jsx}'],
+  collectCoverageFrom: ['src/**/*.{js,jsx}', '!src/**/*.stories.js'],
   globals: {
     __PATH_PREFIX: '',
   },
