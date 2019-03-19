@@ -3,7 +3,7 @@ module.exports = {
   env: {
     browser: true,
     es6: true,
-    "cypress/globals": true,
+    'cypress/globals': true,
     'jest/globals': true,
   },
   settings: {
@@ -20,14 +20,20 @@ module.exports = {
     sourceType: 'module',
   },
   plugins: ['react', 'react-hooks', 'jest', 'cypress', 'prettier'],
-  extends: ['airbnb', 'prettier', 'prettier/react'], 
+  extends: ['airbnb', 'prettier', 'prettier/react'],
   rules: {
     'react/require-default-props': 'off',
     'react/default-props-match-prop-types': 'off',
     'react/sort-comp': [
       'error',
       {
-        order: ['type-annotations', 'static-methods', 'lifecycle', 'everything-else', 'render'],
+        order: [
+          'type-annotations',
+          'static-methods',
+          'lifecycle',
+          'everything-else',
+          'render',
+        ],
       },
     ],
     'react-hooks/rules-of-hooks': 'error',
@@ -41,6 +47,12 @@ module.exports = {
       {
         components: ['Link'],
         specialLink: ['to'],
+      },
+    ],
+    'import/no-extraneous-dependencies': [
+      'error',
+      {
+        devDependencies: ['**/__tests__/**', '**/*.test.js', '**/*.stories.js'],
       },
     ],
   },

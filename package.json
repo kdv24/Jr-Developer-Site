@@ -28,7 +28,9 @@
     "e2e:open": "start-server-and-test develop http-get://localhost:8000 cy:open",
     "e2e:headless": "start-server-and-test develop http-get://localhost:8000 cy:run",
     "cy:open": "cypress open",
-    "cy:run": "cypress run"
+    "cy:run": "cypress run",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "repository": {
     "type": "git",
@@ -52,8 +54,16 @@
     "react-helmet": "^5.2.0"
   },
   "devDependencies": {
+    "@babel/core": "^7.3.4",
+    "@storybook/addon-actions": "^5.0.3",
+    "@storybook/addon-knobs": "^5.0.3",
+    "@storybook/addon-links": "^5.0.3",
+    "@storybook/addon-viewport": "^5.0.3",
+    "@storybook/addons": "^5.0.3",
+    "@storybook/react": "^5.0.3",
     "babel-eslint": "^10.0.1",
     "babel-jest": "^24.4.0",
+    "babel-loader": "^8.0.5",
     "babel-preset-gatsby": "^0.1.9",
     "cypress": "^3.1.5",
     "cypress-testing-library": "^2.3.6",
