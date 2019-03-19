@@ -9,6 +9,7 @@ yarn-error.log*
 coverage
 .cache/
 public
+storybook-static/
 
 # Dependency directories
 node_modules/
