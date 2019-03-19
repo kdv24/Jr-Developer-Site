@@ -1,0 +1,13 @@
+.button__base {
+  padding: 1rem 3rem;
+  font-size: 1rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  background-color: #008C72;
+  appearance: none;
+}
+
+.button__base:disabled {
+  background-color: #CCC;
+  color: #1d1d1d;
+}
