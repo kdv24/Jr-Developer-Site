@@ -9,7 +9,7 @@ This starter contains base configuration and examples for a full tooling suite t
 - Integration and End 2 End testing
 - Continuous integration
 - Precommit hooks
-- Storybook (TO BE IMPLEMENTED)
+- Storybook
 - Gatsby base plugins
 
 ## ESLint and Prettier
@@ -56,3 +56,23 @@ Husky and Lint-staged have been installed to automate running scripts on git hoo
 - Format all markdown files. This will also respect the code formatting preferences set in `.prettierrc.js`.
 
 There are many more git hooks and scripts which can be configured. For more information check out the [Husky repo](https://github.com/typicode/husky).
+
+## Storybook
+
+Storybook is a tool to build components in isolation of the main application. This enables development of the component to happen asynchronously of its integration into the site. An example is the data source for the component not being ready for integration. It also enables a tight feedback loop when working on a particular piece of UI, checking the rendered result with different props, and at different screen sizes. A sample component has been included in the repository and can be found at `src/components/button`. The `button.stories.js` file is what brings the component into Storybook. To see this sample component run `yarn storybook`.
+
+The Storybook configuration for this project has been customized in several areas to help initial configuration.
+
+- Update config with reccomended Gatsby changes in `.storybook/webpack.config.js`
+- Add additional Storybook utility plugins including the knobs and viewport plugin.
+- Storybook will look for all files ending in `.stories.js` in the `src` directory and subdirectories. If you desire to use `jsx` extensions, this can be updated in `.storybook/config.js`
+
+Storybook can be built and deployed separately from your site. To do so, run `yarn build-storybook`.
+
+### How to Remove Storybook
+
+If you do not want to include Storybook in your project it can be removed entirely with the following steps.
+
+- Uninstall all `@storybook/*` packages.
+- Delete the `.storybook` directory.
+- Delete the sample Storybook file at `src/components/button/button.stories.js`
