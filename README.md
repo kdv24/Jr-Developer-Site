@@ -26,19 +26,19 @@ Cypress has been configured to conduct End 2 End tests with the development serv
 
 The starter uses CircleCI for its CI server. This runs a Prettier check on all files, lints the files, runs both Jest and Cypress tests, and runs a build of the Gatsby site. If any of those processes fail, the build will fail. This helps alert you of breaking changes within the project. The configuration for CircleCI lives in `.circleci/config.yml`. In order to use CircleCI, some additional action steps are needed. Information on removing all CI configuration for the project is a the bottom of this section.
 
-1. Login to CircleCI. Access is free for all public repositories.
+1. Login to [CircleCI](https://circleci.com/). Access is free for all public repositories.
 1. Enable CircleCI for your repository.
 1. Either remove the CircleCI badge at the top of this README or replace it with the badge for your repository.
 
 If you desire to use CodeCov as a visual interface for monitoring code coverage on your project some configuration will need to be updated. Follow these steps to incorporate CodeCove with your project.
 
-1. Login to CodeCov. Access is free for all public repositories.
+1. Login to [CodeCov](https://codecov.io/). Access is free for all public repositories.
 1. Enable CodeCov for your repository.
 1. Replace the badge at the top of this README with the badge listed in your CodeCov dashboard. If you do not wish to have a badge, it can just be removed.
 
 ### Removing CI and/or Codecov from the project.
 
-To remove CircleCI configuration entirely, delete the `.circleci` folder at the root of the project. The CircleCI and CodeCov badges in his README can also be removed.
+To remove CircleCI configuration entirely, delete the `.circleci` folder at the root of the project. The CircleCI and CodeCov badges in this README can also be removed.
 
 To use CirclCI, but eliminate CodeCov, delete the CodeCov badge from the README and the following section of code from `.circleci/config.yml`
 
@@ -63,7 +63,7 @@ Storybook is a tool to build components in isolation of the main application. Th
 
 The Storybook configuration for this project has been customized in several areas to help initial configuration.
 
-- Update config with reccomended Gatsby changes in `.storybook/webpack.config.js`
+- Update config with recommended Gatsby changes in `.storybook/webpack.config.js`
 - Add additional Storybook utility plugins including the knobs and viewport plugin.
 - Storybook will look for all files ending in `.stories.js` in the `src` directory and subdirectories. If you desire to use `jsx` extensions, this can be updated in `.storybook/config.js`
 
