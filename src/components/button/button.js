@@ -20,4 +20,8 @@ Button.propTypes = {
   onClick: PropTypes.func.isRequired,
 };
 
+Button.defaultProps = {
+  disabled: false,
+};
+
 export default Button;
