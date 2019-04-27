@@ -1,6 +1,7 @@
 import React from 'react';
 import { render } from 'react-testing-library';
 import { StaticQuery } from 'gatsby';
+
 import mockPageQueries from '../../__mocks__/query-mocks';
 
 import IndexPage from '../index';
