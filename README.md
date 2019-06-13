@@ -1,9 +1,19 @@
-[![CircleCI](https://circleci.com/gh/dslemay/gatsby-starter.svg?style=svg)](https://circleci.com/gh/dslemay/gatsby-starter)
-[![codecov](https://codecov.io/gh/dslemay/gatsby-starter/branch/master/graph/badge.svg)](https://codecov.io/gh/dslemay/gatsby-starter)
+# Jr Developer Website
 
-# Gatsby Tooling Starter
+## Contributing
 
-This repo is based on the gatsby tooling starter created by [@dslemay](https://github.com/dslemay/gatsby-starter). His descriptions around the tooling are included at the end of this README.md.
+The basic workflow is:
+1. pull from current master
+2. create a branch from it (`git checkout -b <name_of_your_branch>`)
+3. do your work
+4. push your branch to the repo (`git push -u origin <name_of_your_branch>
+5. it will tell you whether your changes can be merged successfully or not*
+6. if it can be successfully merged, create a PR, and add someone as a reviewer (on the right hand side)
+7. once the reviewer has left comments and given the :thumbsup:, you can merge your branch and close the issue
+8. once merged, go ahead a delete the branch you created
+
+
+This repo is based on the gatsby tooling starter created by [@dslemay](https://github.com/dslemay/gatsby-starter). His descriptions around the tooling are included below.
 
 # Gatsby Tooling Starter
 
