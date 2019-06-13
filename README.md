@@ -3,7 +3,9 @@
 
 # Gatsby Tooling Starter
 
-This starter contains base configuration and examples for a full tooling suite that I find helpful to work with. This was to solve the problem of setting up all of the tools at the start of each project. Some Gatsby configuration is abstracted away into themes. Modules that are not desired can be uninstalled and configuration removed from the project. Tooling included is detailed below.
+This repo is based on the gatsby tooling starter created by [@dslemay](https://github.com/dslemay/gatsby-starter). His descriptions around the tooling are included at the end of this README.md.
+
+# Gatsby Tooling Starter
 
 - ESLint and Prettier configuration
 - Integration and End 2 End testing
@@ -11,6 +13,7 @@ This starter contains base configuration and examples for a full tooling suite t
 - Precommit hooks
 - Storybook
 - Gatsby base plugins
+- Contributing
 
 ## ESLint and Prettier
 
