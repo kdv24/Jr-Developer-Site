@@ -1,4 +1,8 @@
+[![CircleCI](https://circleci.com/gh/dslemay/gatsby-starter.svg?style=svg)](https://circleci.com/gh/dslemay/gatsby-starter)
+[![codecov](https://codecov.io/gh/dslemay/gatsby-starter/branch/master/graph/badge.svg)](https://codecov.io/gh/dslemay/gatsby-starter)
 # Jr Developer Website
+
+This site will be the web presence for [Portland Junior Developer](https://www.meetup.com/Portland-JR-DEVELOPER-Meetup/) meetup group.  It's being built by members of the group and will evolve to meet the needs of the organization and its members.  If you would like to contribute to this project, take a look at the quick guide below, but also the `CONTRIBUTING.md` file for a more complete description of how to get the site up and running and make your best contribution! 💻 😊 🎉
 
 ## Contributing
 
@@ -11,7 +15,6 @@ The basic workflow is:
 6. if it can be successfully merged, create a PR, and add someone as a reviewer (on the right hand side)
 7. once the reviewer has left comments and given the :thumbsup:, you can merge your branch and close the issue
 8. once merged, go ahead a delete the branch you created
-
 
 This repo is based on the gatsby tooling starter created by [@dslemay](https://github.com/dslemay/gatsby-starter). His descriptions around the tooling are included below.
 
