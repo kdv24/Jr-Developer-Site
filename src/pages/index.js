@@ -23,7 +23,10 @@ const IndexPage = () => (
       initialText="We have a code of conduct "
       expandedText=", so please follow it and let us know if it has been violated."
     />
-    <Twitter /> <Link to="/page-2/">Go to page 2</Link>
+    <div style={{ display: 'flex' }}>
+      <Twitter />
+    </div>
+    <Link to="/page-2/">Go to page 2</Link>
   </Layout>
 );
 
