@@ -19,8 +19,9 @@ const IndexPage = () => (
     {/* <p>Let&#39;s build something great!</p> */}
     <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
       <Image />
-      <Resources>
-      </Resources>
+    </div>
+    <div style={{ marginBottom: `1.45rem` }}>
+      <Resources />
     </div>
     <Link to="/page-2/">Go to page 2</Link>
   </Layout>
