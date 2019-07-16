@@ -11,6 +11,8 @@ coverage
 public
 storybook-static/
 
+package-lock.json
+
 # Dependency directories
 node_modules/
 
