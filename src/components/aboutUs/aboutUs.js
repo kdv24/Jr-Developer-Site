@@ -2,7 +2,7 @@ import React from 'react';
 //import PropTypes from 'prop-types';
 import "./aboutUs.css";
 
-const aboutUs = () => {
+const AboutUs = () => {
     const displayText = (e) => {
         e.preventDefault();
 
@@ -44,4 +44,4 @@ const aboutUs = () => {
     )
 }
 
-export default aboutUs;
+export default AboutUs;
