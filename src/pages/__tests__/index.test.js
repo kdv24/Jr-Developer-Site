@@ -25,12 +25,15 @@ beforeEach(() => {
   );
 });
 
-describe('<IndexPafge />', () => {
+describe('<IndexPage />', () => {
   it('renders correctly', () => {
     const { getByText } = render(<IndexPage />);
 
-    const header = getByText(/hi people/i);
-    expect(header.tagName).toBe('H1');
+    const aboutUs = getByText(/About Us/i);
+    expect(aboutUs.tagName).toBe('H1');
+
+    const codeOfConduct = getByText(/Code of Conduct/i);
+    expect(codeOfConduct.tagName).toBe('H1');
 
     const link = getByText(/go to page 2/i);
     expect(link.tagName).toBe('A');
