@@ -17,15 +17,15 @@ const IndexPage = () => (
       Join us to hear relevant speakers, enjoy drinks and network with your fellow developers, 
       and make new connections! We look forward to meeting you."
     />
+    <div style={{ display: 'flex' }}>
+      <Twitter />
+    </div>
     <ExpandableSection
       //placeholder text for- next step will be to pull in the actual text of our CoC via a plugin
       title="Code of Conduct"
       initialText="We have a code of conduct "
       expandedText=", so please follow it and let us know if it has been violated."
     />
-    <div style={{ display: 'flex' }}>
-      <Twitter />
-    </div>
     <Link to="/page-2/">Go to page 2</Link>
   </Layout>
 );
