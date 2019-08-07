@@ -6,4 +6,4 @@ import Volunteer from "./volunteer";
 storiesOf('Volunteer', module)
     .add('default', () => {
         return <Volunteer />
-    });
+});
