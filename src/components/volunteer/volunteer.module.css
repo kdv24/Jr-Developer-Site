@@ -1,0 +1,28 @@
+.volunteerComponent {
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.volunteerForm {
+    height: inherit;
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+}
+
+.volunteerTitle {
+    margin-bottom: 20px;
+}
+
+.volunteerForm > div {
+    display: flex;
+    width: inherit;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
