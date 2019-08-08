@@ -1,4 +1,4 @@
-.twitter__base {
+.twitterBase {
   padding: 1rem 1rem;
   font-size: 1rem;
   font-weight: 800;
@@ -11,6 +11,6 @@
   flex-direction: column;
 }
 
-.twitter-title {
+.twitterTitle {
   align-self: center;
 }

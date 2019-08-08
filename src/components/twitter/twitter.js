@@ -1,11 +1,11 @@
 import React from 'react';
 import { TwitterFollowButton, TwitterTimelineEmbed } from 'react-twitter-embed';
 
-import './styles.css';
+import styles from './twitter.module.css';
 
 const Twitter = () => (
-  <div className="twitter__base">
-    <h3 className="twitter-title">Jr Dev Twitter Feed</h3>
+  <div className={styles.twitterBase}>
+    <h3 className={styles.twitterTitle}>Jr Dev Twitter Feed</h3>
     <TwitterTimelineEmbed
       sourceType="profile"
       screenName="pdx_jr_devs"
