@@ -5,6 +5,7 @@ import Layout from '../components/layout';
 import Seo from '../components/seo';
 import ExpandableSection from '../components/expandable-section/expandable-section';
 
+
 const IndexPage = () => (
   <Layout>
     <Seo title="Home" keywords={[`gatsby`, `application`, `react`]} />
