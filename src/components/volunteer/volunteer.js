@@ -43,7 +43,7 @@ class Volunteer extends Component {
                         <label htmlFor="volunteerList" >Volunteer Options: </label>
                         <select name="volunteerList" id="volunteerList" value={this.state.volunteerList} onBlur={this.handleInputChanges} onChange={this.handleInputChanges}>
                             <option value="twitterManagement" >Twitter Account Management</option>
-                            <option value="greeter" >Guess Greeter</option>
+                            <option value="greeter" >Guest Greeter</option>
                             <option value="signage" >Signage for Vacasa Nights</option>
                             <option value="socialMediaManagement" >Social Media management</option>
                         </select>
