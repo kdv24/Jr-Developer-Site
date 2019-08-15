@@ -17,7 +17,6 @@ class Volunteer extends Component {
     handleInputChanges = async (e) => {
         await this.setState({[e.target.name]: e.target.value});
     }
-    
 
     render(){
         return (
