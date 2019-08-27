@@ -1,0 +1,16 @@
+.twitterBase {
+  padding: 1rem 1rem;
+  font-size: 1rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  background-color: #008c72;
+  border: black 5px solid;
+  width: 40%;
+  min-width: 280px;
+  display: flex;
+  flex-direction: column;
+}
+
+.twitterTitle {
+  align-self: center;
+}
