@@ -5,6 +5,7 @@ import Layout from '../components/layout';
 import Seo from '../components/seo';
 import ExpandableSection from '../components/expandable-section/expandable-section';
 import Twitter from '../components/twitter/twitter';
+import Resources from '../components/resources/resources';
 
 const IndexPage = () => (
   <Layout>
@@ -26,6 +27,9 @@ const IndexPage = () => (
       initialText="We have a code of conduct "
       expandedText=", so please follow it and let us know if it has been violated."
     />
+    <div style={{ marginBottom: `1.45rem` }}>
+      <Resources />
+    </div>
     <Link to="/page-2/">Go to page 2</Link>
   </Layout>
 );
